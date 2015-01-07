@@ -15,11 +15,11 @@ describe "elixir::local" do
     let(:params) { { :version => "1.0.0" } }
 
     it { should contain_ruby__version("1.0.0") }
-    it { should contain_file("/tmp/.exenv-version").with(
+    it { should contain_file("/tmp/.exenv-version").with({
       :ensure  => "present",
       :content => "1.0.0\n",
       :replace => true
-    )}
+    })}
   end
 
   context "ensure => absent" do

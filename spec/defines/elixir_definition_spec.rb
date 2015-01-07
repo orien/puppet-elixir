@@ -24,7 +24,7 @@ RSpec.describe "elixir::definition" do
 
   it { should contain_class("elixir") }
   it { should contain_class("elixir::build") }
-  it { should contain_file(definition_path).with(
+  it { should contain_file(definition_path).with({
     :source  => "puppet:///modules/elixir/definitions/#{title}"
-  )}
+  })}
 end

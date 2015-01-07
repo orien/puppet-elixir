@@ -8,29 +8,29 @@ RSpec.describe "elixir::version" do
     context "default params" do
       it { should contain_class("elixir") }
 
-      it { should contain_elixir("1.0.0").with(
+      it { should contain_elixir("1.0.0").with({
         :ensure       => "installed",
         :elixir_build => "/test/boxen/elixir-build/bin/elixir-build",
         :provider     => "elixirbuild",
         :user         => "testuser",
-      )}
+      })}
     end
 
     context "when env is default" do
-      it { should contain_elixir("1.0.0").with_environment(
+      it { should contain_elixir("1.0.0").with_environment({
         "CC" => "/usr/bin/cc",
         "FROM_HIERA" => "true",
-      )}
+      })}
     end
 
     context "when env is not nil" do
       let(:params) { { :env => {"SOME_VAR" => "flocka"} } }
 
-      it { should contain_elixir("1.0.0").with_environment(
+      it { should contain_elixir("1.0.0").with_environment({
         "CC" => "/usr/bin/cc",
         "FROM_HIERA" => "true",
         "SOME_VAR" => "flocka"
-      )}
+      })}
     end
   end
 

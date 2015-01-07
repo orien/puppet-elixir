@@ -12,8 +12,8 @@ RSpec.describe "elixir" do
   it { should contain_class("boxen::config") }
   it { should contain_boxen__env_script("elixir") }
 
-  it { should contain_file("/opt/elixirs").with(
+  it { should contain_file("/opt/elixirs").with({
     :ensure => "directory",
     :owner  => "testuser",
-  ) }
+  }) }
 end
