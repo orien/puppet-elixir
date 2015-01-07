@@ -1,0 +1,10 @@
+elixir::prefix: '/opt'
+elixir::user: "%{::id}"
+
+elixir::build::ensure: 'v20141001'
+elixir::build::prefix: "%{hiera('elixir::prefix')}/elixir-build"
+elixir::build::user: "%{hiera('elixir::user')}"
+
+elixir::exenv::ensure: v0.1.0
+elixir::exenv::prefix: "%{hiera('elixir::prefix')}/exenv"
+elixir::exenv::user: "%{hiera('elixir::user')}"
