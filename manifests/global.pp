@@ -5,7 +5,7 @@
 #   class { 'elixir::global': version => '1.0.0' }
 
 class elixir::global($version = '1.0.0') {
-  # require elixir
+  require elixir
 
   ensure_resource('elixir::version', $version)
 

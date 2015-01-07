@@ -10,7 +10,7 @@ class elixir::exenv (
   $user   = $elixir::exenv::user,
 ) {
 
-  # require elixir
+  require elixir
 
   repository { $prefix:
     ensure => $ensure,

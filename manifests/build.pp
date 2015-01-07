@@ -5,7 +5,7 @@ class elixir::build(
   $prefix = $elixir::build::prefix,
   $user   = $elixir::build::user,
 ) {
-  #  require elixir
+  require elixir
 
   repository { $prefix:
     ensure => $ensure,
