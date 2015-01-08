@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe "elixir::definition" do
+describe "elixir::definition" do
   let(:facts) { default_test_facts }
   let(:title) { "1.0.0" }
 

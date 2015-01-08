@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe "elixir" do
+describe "elixir" do
 
   let(:facts) { default_test_facts }
   let(:default_params) { { :prefix => "/test/boxen" } }

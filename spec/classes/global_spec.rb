@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe "elixir::global" do
+describe "elixir::global" do
   let(:facts) { default_test_facts }
   let(:params) { { :version => "1.0.0" } }
 
