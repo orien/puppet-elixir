@@ -3,7 +3,8 @@ elixir::version::env:
   Darwin:
     CFLAGS: "-I%{::homebrew::config::installdir}/include"
     LDFLAGS: "-L%{::homebrew::config::installdir}/lib"
-    RUBY_CONFIGURE_OPTS: ""
+    HOME: /tmp
+    ELIXIR_CONFIGURE_OPTS: ""
 
-ruby::prefix: "%{::boxen::config::home}"
-ruby::user: "%{::boxen_user}"
+elixir::prefix: "%{::boxen::config::home}"
+elixir::user: "%{::boxen_user}"

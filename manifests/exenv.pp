@@ -4,6 +4,7 @@
 #
 #     include elixir::exenv
 #
+
 class elixir::exenv (
   $ensure = $elixir::exenv::ensure,
   $prefix = $elixir::exenv::prefix,
@@ -28,4 +29,3 @@ class elixir::exenv (
   }
 
 }
-

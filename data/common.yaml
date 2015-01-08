@@ -1,7 +1,8 @@
-elixir::prefix: '/opt'
+---
+elixir::prefix: /opt
 elixir::user: "%{::id}"
 
-elixir::build::ensure: 'v20141001'
+elixir::build::ensure: v20141001
 elixir::build::prefix: "%{hiera('elixir::prefix')}/elixir-build"
 elixir::build::user: "%{hiera('elixir::user')}"
 

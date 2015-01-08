@@ -14,7 +14,7 @@ describe "elixir::local" do
   context "ensure => present" do
     let(:params) { { :version => "1.0.0" } }
 
-    it { should contain_ruby__version("1.0.0") }
+    it { should contain_elixir__version("1.0.0") }
     it { should contain_file("/tmp/.exenv-version").with({
       :ensure  => "present",
       :content => "1.0.0\n",
