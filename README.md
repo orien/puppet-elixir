@@ -50,8 +50,8 @@ The following variables may be automatically overridden with Hiera:
 ---
 
 "elixir::user": "deploy"
-"elixir::build::ensure": "v20141028"
-"elixir::exenv::ensure": "v0.4.0"
+"elixir::build::ensure": "v20141001"
+"elixir::exenv::ensure": "v0.1.0"
 ```
 
 You can also use JSON if your Hiera is configured for that.
